@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "deployment-impact"
+name = "demo-checker"
 version = "0.1.0"
 description = "AI-assisted impact analysis for dependent projects during deployment."
 readme = "README.md"
@@ -18,7 +18,7 @@ test = [
 ]
 
 [project.scripts]
-deployment-impact = "deployment_impact.cli:main"
+demo-checker = "deployment_impact.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

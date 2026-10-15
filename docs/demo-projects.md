@@ -2,7 +2,7 @@
 
 Bu demo üç public GitHub deposu kullanır:
 
-- [yanki-deployment-checker](https://github.com/mhusna/yanki-deployment-checker):
+- [demo-checker](https://github.com/mhusna/demo-checker):
   diff, referans taraması ve AI agent ağı.
 - [core](https://github.com/mhusna/core): değiştirilen helper'ların kaynağı;
   push üzerine analiz workflow'unu çalıştırır.
@@ -29,7 +29,7 @@ bölümüne şunları ekleyin:
 | --- | --- |
 | `BUSINESS_REPOSITORY` | `mhusna/business` |
 | `BUSINESS_BASE_REF` | `main` |
-| `ANALYZER_REPOSITORY` | `mhusna/yanki-deployment-checker` |
+| `ANALYZER_REPOSITORY` | `mhusna/demo-checker` |
 | `AZURE_OPENAI_DEPLOYMENT` | Azure AI Foundry'deki deployment adı |
 
 **Secrets** bölümüne ekleyin:

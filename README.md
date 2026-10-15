@@ -1,4 +1,7 @@
-# Deployment Impact Checker
+# Demo Checker
+
+Core değişikliklerinin bağımlı projelere etkisini analiz eden Python CLI paketi
+ve GitHub Actions demo uygulaması.
 
 Bir `core` projesindeki deployment öncesi değişikliklerin, ona bağımlı ayrı bir
 `business` deposundaki olası etkilerini GitHub Actions içinde inceleyen demo.
@@ -63,7 +66,7 @@ verin; Azure ayarlarını ortam değişkeni olarak sağlayın:
 $env:AZURE_OPENAI_ENDPOINT = "https://<resource>.openai.azure.com/"
 $env:AZURE_OPENAI_API_KEY = "<secret>"
 $env:AZURE_OPENAI_DEPLOYMENT = "<deployment-name>"
-python -m deployment_impact --core-repo . --business-repo ..\business --base origin/main --report impact-report.md
+demo-checker --core-repo ..\core --business-repo ..\business --base origin/main --report impact-report.md
 ```
 
 ## Sınırlar
